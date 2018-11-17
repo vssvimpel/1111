@@ -1,0 +1,1092 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3397f5;
+}
+
+a:hover {
+  color: #26639c;
+}
+
+.wrapper {
+  background: url(img/Moskva.jpg);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 100%;
+  height: auto;
+  max-width: 1900px;
+}
+
+.wrapper .wrapper1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.wrapper .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Pattaya', sans-serif;
+  padding-top: 20px;
+}
+
+.wrapper .header1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .name {
+  padding-left: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffc34b;
+  font-style: italic;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .wrapper .name {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 651px) {
+  .wrapper .name {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
+.wrapper .logo {
+  background: url(icons/spasskaya-tower.png) center center/contain no-repeat;
+  min-height: 100px;
+  min-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .wrapper .logo {
+    min-height: 70px;
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 651px) {
+  .wrapper .logo {
+    min-height: 60px;
+    min-width: 60px;
+  }
+}
+
+.wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .nav {
+  margin: 0 auto;
+}
+
+.wrapper .nav a {
+  text-decoration: none;
+  color: white;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.wrapper .nav a:hover {
+  color: #9b9b9b;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .wrapper .nav a {
+    color: white;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 651px) {
+  .wrapper .nav a {
+    color: #080808;
+  }
+}
+
+.wrapper .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+}
+
+@media (min-width: 1000px) and (max-width: 1360px) {
+  .wrapper .caption {
+    height: 300px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .wrapper .caption {
+    height: 250px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media (max-width: 651px) {
+  .wrapper .caption {
+    height: 200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.wrapper .caption p {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+
+@media (min-width: 1000px) and (max-width: 1360px) {
+  .wrapper .caption p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .wrapper .caption p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 651px) {
+  .wrapper .caption p {
+    font-size: 20px;
+  }
+}
+
+.wrapper h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 1000px) and (max-width: 1360px) {
+  .wrapper h1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .wrapper h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 651px) {
+  .wrapper h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
+
+h2:not(.logo):before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 1px;
+  background: #ffc34b;
+  top: 102px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media (max-width: 651px) {
+  h2:not(.logo):before {
+    top: 93px;
+  }
+}
+
+h2 {
+  position: relative;
+  padding: 50px 0 20px 0;
+  font-size: 30px;
+}
+
+@media (max-width: 651px) {
+  h2 {
+    font-size: 23px;
+  }
+}
+
+.title h2 {
+  color: #3c6f8f;
+}
+
+.title p {
+  font-size: 17px;
+  padding: 0px 0 50px 0;
+}
+
+section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.wide {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.menu-btn {
+  width: 50px;
+  height: 50px;
+  background: url(icons/menu.svg) center center/80% no-repeat white;
+  display: none;
+}
+
+.button {
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button a {
+  background-color: #559fce;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 200px;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button a:hover {
+  background-color: #3c6f8f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.advantages {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 651px) {
+  .advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.edge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .edge {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 651px) {
+  .edge {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.edge div {
+  text-align: left;
+}
+
+.desc {
+  margin-left: 100px;
+  padding-right: 20px;
+}
+
+.img:before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid;
+  background-size: cover;
+  position: absolute;
+}
+
+.img:nth-of-type(6n + 1) {
+  color: #eb4747;
+}
+
+.img:nth-child(odd):before {
+  background-image: url(icons/map.png);
+}
+
+.whoweare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #ffc34b;
+  color: white;
+}
+
+.whoweare div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /*задаем что каждый эллемент занимает половину*/
+  -ms-flex-preferred-size: 320px;
+      flex-basis: 320px;
+  /*задаем базовае значение ширины меньшей которой эллемент не будет*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-shadow: 10px black;
+}
+
+.whoweare .title h2 {
+  color: white;
+}
+
+.selfie {
+  background: url(img/Selfie.jpg);
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  min-height: 500px;
+  min-width: 50%;
+}
+
+.whoweare .title {
+  text-align: left;
+  padding: 50px 20px 50px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .whoweare .title {
+    padding: 50px 20px 50px 50px;
+  }
+}
+
+@media (max-width: 651px) {
+  .whoweare .title {
+    padding: 50px 20px 50px 50px;
+  }
+}
+
+.button a {
+  background-color: #559fce;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 200px;
+  color: white;
+}
+
+.moscow_foto {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Почему когда ставлю max-width в px или
+width в % то изображения пропадают? */
+.moscow_foto div:before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  height: 250px;
+  background-size: cover;
+}
+
+/* Почему картинки другие картинки сдвигаются?
+Ghb hfphtitybb 1920 почему крайние правые картинки не показываются, а происходит
+какая-то рябь? */
+.moscow_foto div:hover {
+  -webkit-transform: translate(0px, 0px) scale(1.5, 1.5);
+          transform: translate(0px, 0px) scale(1.5, 1.5);
+  /*skew(20deg, 20deg) для изменения угла наклона */
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  border: 3px white solid;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.moscow_foto div:nth-child(8n + 1):before {
+  background-image: url(img/center.jpg);
+}
+
+.moscow_foto div:nth-child(8n + 2):before {
+  background-image: url(img/24.jpg);
+}
+
+.moscow_foto div:nth-child(8n + 3):before {
+  background-image: url(img/excursion.jpg);
+}
+
+.moscow_foto div:nth-child(8n + 4):before {
+  background-image: url(img/index.jpg);
+}
+
+.moscow_foto div:nth-child(8n + 5):before {
+  background-image: url(img/kremlin.jpg);
+}
+
+.moscow_foto div:nth-child(8n + 6):before {
+  background-image: url(img/maxresdefault.jpg);
+}
+
+.moscow_foto div:nth-child(8n + 7):before {
+  background-image: url(img/original.jpeg);
+}
+
+.moscow_foto div:nth-child(8n + 8):before {
+  background-image: url(img/xlarge.jpg);
+}
+
+.reviews-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews-text > div {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  width: 500px;
+}
+
+.review {
+  background-color: #f5efef;
+  padding: 35px;
+}
+
+.consumer_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consumer_name div {
+  padding: 10px 10px 10px 0px;
+}
+
+/* Почему-то не получается вставить разные фото,
+хотя с фото Москвы получилось */
+.consumer_name .consumer:before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.consumer:nth-child(2n + 1):before {
+  background-image: url(img/consumer_1.jpg);
+}
+
+.consumer:nth-child(2n + 2):before {
+  background-image: url(img/consumer_2.jpg);
+}
+
+.wrapper_footer {
+  max-width: 1900px;
+  background-color: #153741;
+  padding: 40px 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .footer {
+    display: block;
+  }
+}
+
+@media (max-width: 651px) {
+  .footer {
+    display: block;
+  }
+}
+
+.footer > div {
+  width: 33.3333%;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .footer > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 651px) {
+  .footer > div {
+    width: 100%;
+  }
+}
+
+.logo_footer {
+  position: relative;
+  width: 300px;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .logo_footer {
+    display: none;
+  }
+}
+
+@media (max-width: 651px) {
+  .logo_footer {
+    display: none;
+  }
+}
+
+.logo_footer:before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-image: url(icons/spasskaya-tower.png);
+  position: absolute;
+  top: 5px;
+}
+
+.footer p {
+  padding: 20px 50px 20px 2px;
+  text-align: left;
+  color: white;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .footer p {
+    text-align: center;
+    padding: 5px 5px 15px 17px;
+  }
+}
+
+@media (max-width: 651px) {
+  .footer p {
+    text-align: center;
+    padding: 5px 5px 15px 17px;
+  }
+}
+
+.logo_footer p {
+  font-size: 20px;
+  font-weight: 900;
+  color: #ffc34b;
+  font-style: italic;
+  padding: 20px;
+  margin-left: 65px;
+}
+
+.contacts {
+  text-align: left;
+  margin-left: 100px;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .contacts {
+    text-align: center;
+    margin-left: 71px;
+  }
+}
+
+@media (max-width: 651px) {
+  .contacts {
+    text-align: center;
+    margin-left: 71px;
+  }
+}
+
+.contacts h3 {
+  color: white;
+  margin: 15px -45px;
+}
+
+.contacts p {
+  position: relative;
+  margin: 10px 0;
+}
+
+.contacts p:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  left: -50px;
+  top: 15px;
+  position: absolute;
+}
+
+.contacts p:nth-child(3n + 1):before {
+  background-image: url(icons/placeholder.png);
+}
+
+.contacts p:nth-child(3n + 2):before {
+  background-image: url(icons/mail.png);
+}
+
+.contacts p:nth-child(3n + 3):before {
+  background-image: url(icons/telephone.png);
+}
+
+.news {
+  text-align: left;
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .news {
+    display: none;
+  }
+}
+
+@media (max-width: 651px) {
+  .news {
+    display: none;
+  }
+}
+
+.news h3 {
+  color: white;
+  margin: 15px 0;
+}
+
+@media (max-width: 650px) {
+  .nav a {
+    /* display: none; */
+    text-decoration: none;
+    color: #080808;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    background: white;
+    color: black;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .name {
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffc34b;
+    font-style: italic;
+  }
+  .caption p {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .menu-btn {
+    width: 50px;
+    height: 50px;
+    background: url(icons/menu.svg) center center/80% no-repeat white;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1040px) {
+  .nav a {
+    /* display: none; */
+    text-decoration: none;
+    color: #080808;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .name {
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffc34b;
+    font-style: italic;
+  }
+  .caption p {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    background: url(img/Moskva-750.jpg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100%;
+    height: auto;
+    max-width: 800px;
+  }
+}
+
+.wrapper-foto {
+  background-image: url(img/tourists.jpg);
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.wrapper-foto .wrapper-foto-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.wrapper-h1 {
+  text-align: center;
+  padding-top: 150px;
+  margin: auto;
+}
+
+.wide {
+  max-width: 1900px;
+  text-align: center;
+}
+
+.wide .wide-tours:nth-of-type(even) {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.wide .wide-tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wide .wide-tours div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /*задаем что каждый эллемент занимает половину*/
+  -ms-flex-preferred-size: 470px;
+      flex-basis: 470px;
+  /*задаем базовае значение ширины меньшей которой эллемент не будет*/
+}
+
+.wide .wide-tours div h3 {
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  margin: 50px 0px 50px 45px;
+}
+
+.wide .wide-tours div p {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  margin: 0px 0px 20px 45px;
+}
+
+.wide .wide-tours .wide-tours-text {
+  background-color: #ffc34b;
+}
+
+.wide .wide-tours .wide-tours-foto {
+  background-image: url(images/3_01.jpg);
+  max-height: 580px;
+  background-position: top;
+  background-size: cover;
+}
+
+.wide .wide-tours .wide-tours-foto-2 {
+  background-image: url(images/2_02.jpg);
+  max-height: 580px;
+  background-position: top;
+  background-size: cover;
+}
+
+.wide .wide-tours .wide-tours-foto-3 {
+  background-image: url(images/3_03.jpg);
+  max-height: 580px;
+  background-position: top;
+  background-size: cover;
+}
+
+.wide .wide-tours .wide-tours-foto-4 {
+  background-image: url(images/2_04.jpg);
+  max-height: 580px;
+  background-position: top;
+  background-size: cover;
+}
+
+.wrapper-contacts {
+  background-image: url(img/monopod.jpg);
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.wrapper-contacts .wrapper-contacts-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contacts-text {
+  text-align: left;
+}
+
+.contacts-text p {
+  padding-bottom: 30px;
+}
+
+.leadership {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0 50px 0;
+}
+
+.leadership .leadership-man {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.leadership .leadership-man .leadership-man-foto {
+  background-image: url(img/man.jpg);
+  width: 210px;
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.leadership .leadership-woman {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.leadership .leadership-woman .leadership-woman-foto {
+  background-image: url(img/woman.jpg);
+  width: 210px;
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.leadership .leadership-text {
+  padding: 20px;
+  max-width: 300px;
+  height: 120px;
+  text-align: left;
+  background-color: #ffc34b;
+  border-left: #3397f5 4px solid;
+}
+
+.leadership .leadership-text a {
+  text-decoration: none;
+}
+
+.contacts-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contacts-form .contacts-contacts {
+  text-align: left;
+  margin: 0 10px 0 100px;
+}
+
+.contacts-form .contacts-contacts h4 {
+  position: relative;
+}
+
+.contacts-form .contacts-contacts h4:before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  left: -60px;
+  top: 3px;
+}
+
+.contacts-form .contacts-contacts h4:nth-child(3n + 1):before {
+  background-image: url(icons/placeholder.png);
+}
+
+.contacts-form .contacts-contacts h4:nth-child(3n + 2):before {
+  background-image: url(icons/telephone.png);
+}
+
+.contacts-form .contacts-contacts h4:nth-child(3n + 3):before {
+  background-image: url(icons/mail.png);
+}
+
+.contacts-form .contacts-contacts p {
+  margin: 0 0 20px 0;
+}
+
+.contacts-form form {
+  text-align: left;
+}
+
+.contacts-form form input {
+  width: 510px;
+  height: 50px;
+  border: #eb4747 1px solid;
+  margin: 10px 0 5px 0;
+}
+/*# sourceMappingURL=style.css.map */

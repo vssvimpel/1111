@@ -1,0 +1,887 @@
+$color: white;
+$color2: rgb(255, 195, 75);
+$hcolor: rgb(255, 255, 255);
+$hcolor3: rgb(8, 8, 8);
+$color4: rgb(51, 151, 245);
+$color5: rgb(38, 99, 156);
+$foto-count: 4;
+
+@mixin adapt($screen) {
+    @if $screen == small {
+        @media (max-width: 651px) {@content};
+    } @else if $screen == medium {
+        @media (min-width: 651px) and (max-width: 1000px) {@content};
+    } @else if $screen == large {
+        @media (min-width: 1000px) and (max-width: 1360px) {@content};
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: $color4;
+    &:hover {
+        color: $color5;
+    }
+}
+
+// ++++++++ шапка сайта +++++++++
+.wrapper {
+    background: url(img/Moskva.jpg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100%;
+    height: auto;
+    max-width: 1900px;
+
+    .wrapper1 {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }   
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Pattaya', sans-serif;
+            padding-top: 20px;
+        }
+            .header1 {
+                display: flex;
+                align-items: center;
+            }
+                .name {
+                    padding-left: 20px;
+                    font-size: 40px;
+                    font-weight: 900;
+                    color: $color2;
+                    font-style: italic;
+                    @include adapt (medium) {
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                    @include adapt (small) {
+                        font-size: 25px;
+                        font-weight: 500;
+                    }
+                }
+                .logo {
+                    background: url(icons/spasskaya-tower.png) center center / contain no-repeat;
+                    min-height: 100px;
+                    min-width: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    @include adapt (medium) {
+                        min-height: 70px;
+                        min-width: 70px;
+                    }
+                    @include adapt (small) {
+                        min-height: 60px;
+                        min-width: 60px;
+                    }
+                }
+            nav {
+                display: flex;
+            }
+                .nav {
+                    margin: 0 auto;
+                }
+                    .nav a {
+                        text-decoration: none;
+                        color: $color;
+                        padding-left: 30px;
+                        font-size: 20px;
+                        &:hover {
+                            color: rgb(155, 155, 155);
+                        }
+                        @include adapt (medium) {
+                            color: $color;
+                            font-size: 15px;
+                        }
+                        @include adapt (small) {
+                            color: $hcolor3;
+                        }
+                    }
+        .caption {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            @include adapt (large) {
+                height: 300px;
+            }
+            @include adapt (medium) {
+                height: 250px;
+                align-items: baseline;
+            }
+            @include adapt (small) {
+                height: 200px;
+                align-items: center;
+            }
+        }
+            .caption p {
+                font-size: 50px;
+                font-weight: 600;
+                color: $hcolor;
+                @include adapt (large) {
+                    font-size: 30px;
+                }
+                @include adapt (medium) {
+                    font-size: 25px;
+                }
+                @include adapt (small) {
+                    font-size: 20px;
+                }
+            }
+            h1 {
+                font-size: 30px;
+                font-weight: 600;
+                color: $hcolor;
+                margin-bottom: 100px;
+                @include adapt (large) {
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin-bottom: 50px;
+                }
+                @include adapt (medium) {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 40px;
+                }
+                @include adapt (small) {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                }
+            }
+}
+
+
+h2:not(.logo):before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 1px;
+    background: $color2;
+    top: 102px;
+    transition: 0.2s all;
+    right: 0;
+    left: 0;
+    margin: auto;
+    @include adapt(small) {
+        top: 93px;
+    }
+}
+
+h2 {
+    position: relative;
+    padding: 50px 0 20px 0;
+    font-size: 30px;
+    @include adapt(small) {
+        font-size: 23px;
+    }
+}
+.title h2 {
+    color: rgb(60, 111, 143);
+}
+.title p {
+    font-size: 17px;
+    padding: 0px 0 50px 0;
+}
+section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.wide {
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+// .header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     font-family: 'Pattaya', sans-serif;
+// }
+// .header1 {
+//     display: flex;
+//     align-items: center;
+// }
+
+
+// .name {
+//     padding-left: 20px;
+//     font-size: 40px;
+//     font-weight: 900;
+//     color: $color2;
+//     font-style: italic;
+// }
+
+
+// .logo {
+//     background: url(icons/spasskaya-tower.png) center center / contain no-repeat;
+//     min-height: 100px;
+//     min-width: 100px;
+//     display: flex;
+//     justify-content: space-between;
+// }
+.menu-btn {
+    width: 50px;
+    height: 50px;
+    background: url(icons/menu.svg) center center / 80% no-repeat white;
+    display: none;
+}
+
+
+// .caption p {
+//     font-size: 50px;
+//     font-weight: 600;
+//     color: $hcolor;
+// }
+
+.button {
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button a {
+    background-color: rgb(85, 159, 206);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 200px;
+    color: white;
+    transition: 0.3s;
+}
+
+.button a:hover {
+    background-color: rgb(60, 111, 143);
+    transition: 0.3s;
+}
+
+.advantages {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    @include adapt(small) {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    @include adapt(medium) {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+}
+.edge {
+    display: flex;
+    width: 50%;
+    position: relative; 
+    padding-bottom: 50px;
+    // @include adapt(small) {
+    //     width: 100%;
+    //     justify-content: center;
+    // }
+    @include adapt(medium) {
+        width: 100%;
+        justify-content: center;
+    }
+    @include adapt(small) {
+        width: 100%;
+        justify-content: center;
+    } 
+}
+
+.edge div {
+    text-align: left;
+}
+
+.desc {
+    margin-left: 100px;
+    padding-right: 20px;  
+}
+
+.img:before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid;
+    background-size: cover;
+    position: absolute; 
+}
+
+.img:nth-of-type(6n + 1) {
+    color: #eb4747;
+}
+
+.img:nth-child(odd):before {
+    background-image: url(icons/map.png);
+}
+
+.whoweare {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color2;
+    color: $hcolor;
+}
+.whoweare div {
+    // width: 50%;
+    flex-grow: 1;    /*задаем что каждый эллемент занимает половину*/
+    flex-basis: 320px; /*задаем базовае значение ширины меньшей которой эллемент не будет*/
+    justify-content: center;
+    text-shadow: 10px black;
+}
+.whoweare .title h2 {
+    color: $hcolor;
+}
+
+.selfie {
+    background: url(img/Selfie.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    min-height: 500px;
+    min-width: 50%;
+}
+.whoweare .title {
+    text-align: left;
+    padding: 50px 20px 50px 50px;
+    box-sizing: border-box;
+    @include adapt (medium) {
+        padding: 50px 20px 50px 50px;
+    }
+    @include adapt (small) {
+        padding: 50px 20px 50px 50px;
+    }
+}
+
+.button a {
+    background-color: rgb(85, 159, 206);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 200px;
+    color: white;
+}
+
+
+.moscow_foto {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+/* Почему когда ставлю max-width в px или
+width в % то изображения пропадают? */
+.moscow_foto div:before {
+    content: "";
+    display: flex;
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+}
+
+/* Почему картинки другие картинки сдвигаются?
+Ghb hfphtitybb 1920 почему крайние правые картинки не показываются, а происходит
+какая-то рябь? */
+.moscow_foto div:hover {
+    transform: translate(0px, 0px) scale(1.5, 1.5);  /*skew(20deg, 20deg) для изменения угла наклона */
+    transform-origin: 50% 50%;
+    border: 3px white solid;
+    transition: 0.3s all;
+}
+
+.moscow_foto div:nth-child(8n + 1):before {
+    background-image: url(img/center.jpg);
+}
+.moscow_foto div:nth-child(8n + 2):before {
+    background-image: url(img/24.jpg);
+}
+.moscow_foto div:nth-child(8n + 3):before {
+    background-image: url(img/excursion.jpg);
+}
+.moscow_foto div:nth-child(8n + 4):before {
+    background-image: url(img/index.jpg);
+}
+.moscow_foto div:nth-child(8n + 5):before {
+    background-image: url(img/kremlin.jpg);
+}
+.moscow_foto div:nth-child(8n + 6):before {
+    background-image: url(img/maxresdefault.jpg);
+}
+.moscow_foto div:nth-child(8n + 7):before {
+    background-image: url(img/original.jpeg);
+}
+.moscow_foto div:nth-child(8n + 8):before {
+    background-image: url(img/xlarge.jpg);
+}
+
+.reviews-text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.reviews-text > div {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 500px;
+
+    
+}
+
+.review {
+    background-color: rgb(245, 239, 239);
+    padding: 35px;
+}
+
+
+.consumer_name {
+    display: flex;
+    align-items: center;
+}
+.consumer_name div {
+    padding: 10px 10px 10px 0px;
+}
+
+/* Почему-то не получается вставить разные фото,
+хотя с фото Москвы получилось */
+.consumer_name .consumer:before {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+.consumer:nth-child(2n + 1):before {
+    background-image: url(img/consumer_1.jpg);
+}
+.consumer:nth-child(2n + 2):before {
+    background-image: url(img/consumer_2.jpg);
+}
+
+.wrapper_footer {
+    max-width: 1900px;
+    background-color: rgb(21, 55, 65);
+    padding: 40px 0;
+    // @include adapt(small) {
+    //     display: none;
+    // }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @include adapt(medium) {
+        display: block;
+    }
+    @include adapt(small) {
+        display: block;
+    }
+}
+
+
+.footer > div {
+    width: 33.3333%;
+    @include adapt(medium) {
+        width: 100%;
+    }
+    @include adapt(small) {
+        width: 100%;
+    }
+}
+.logo_footer {
+    position: relative;
+    width: 300px;
+    @include adapt (medium) {
+        display: none;
+    }
+    @include adapt (small) {
+        display: none;
+    }
+}
+.logo_footer:before {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(icons/spasskaya-tower.png);
+    position: absolute;
+    top: 5px;
+}
+
+.footer p {
+    padding: 20px 50px 20px 2px;
+    text-align: left;
+    color: white;
+    @include adapt (medium) {
+        text-align: center;
+        padding: 5px 5px 15px 17px;
+    }
+    @include adapt (small) {
+        text-align: center;
+        padding: 5px 5px 15px 17px;
+    }
+}
+.logo_footer p {
+    font-size: 20px;
+    font-weight: 900;
+    color: $color2;
+    font-style: italic;
+    padding: 20px;
+    margin-left: 65px;
+}
+
+.contacts {
+    text-align: left;
+    margin-left: 100px;
+    @include adapt (medium) {
+        text-align: center;
+        margin-left: 71px;
+    }
+    @include adapt (small) {
+        text-align: center;
+        margin-left: 71px;
+    }
+}
+.contacts h3 {
+    color: $hcolor;
+    margin: 15px -45px;
+}
+
+.contacts p {
+    position: relative;
+    margin: 10px 0;
+}
+
+.contacts p:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    left: -50px;
+    top: 15px;
+    position: absolute;
+}
+
+.contacts p:nth-child(3n + 1):before {
+    background-image: url(icons/placeholder.png);
+}
+.contacts p:nth-child(3n + 2):before {
+    background-image: url(icons/mail.png);
+}
+.contacts p:nth-child(3n + 3):before {
+    background-image: url(icons/telephone.png);
+}
+
+.news {
+    text-align: left;
+    @include adapt(medium) {
+        display: none;
+    }
+    @include adapt(small) {
+        display: none;
+    }
+}
+
+.news h3 {
+    color: $hcolor;
+    margin: 15px 0; 
+}
+
+
+@media (max-width: 650px) {
+    .nav a {
+        /* display: none; */
+    text-decoration: none;
+    color: $hcolor3;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+ 
+
+    }
+    nav {
+        display: none;
+        position: absolute;
+        background: white;
+        color: black;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    .name {
+        padding-left: 20px;
+        font-size: 30px;
+        font-weight: 700;
+        color: $color2;
+        font-style: italic;
+    }
+    .caption p {
+        font-size: 25px;
+        font-weight: 500;
+        color: $hcolor;
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: 400;
+        color: $hcolor;
+        margin-bottom: 30px;
+    }
+    .menu-btn {
+        width: 50px;
+        height: 50px;
+        background: url(icons/menu.svg) center center / 80% no-repeat white;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 780px) and (max-width: 1040px) {
+    .nav a {
+        /* display: none; */
+    text-decoration: none;
+    color: $hcolor3;
+    padding-left: 5px;
+    font-size: 15px;
+    }
+    .name {
+        padding-left: 20px;
+        font-size: 30px;
+        font-weight: 700;
+        color: $color2;
+        font-style: italic;
+    }
+    .caption p {
+        font-size: 25px;
+        font-weight: 500;
+        color: $hcolor;
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: 400;
+        color: $hcolor;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 750px) {
+    .wrapper {
+        background: url(img/Moskva-750.jpg);
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: 100%;
+        height: auto;
+        max-width: 800px;
+    }
+}
+
+// страница туров====================================================================================================
+
+.wrapper-foto {
+    background-image: url(img/tourists.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    .wrapper-foto-wrapper {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+    
+.wrapper-h1 {
+    text-align: center;
+    padding-top: 150px;
+    margin: auto;
+}
+
+.wide {
+    max-width: 1900px;
+    text-align: center;
+    .wide-tours {
+        &:nth-of-type(even) {
+            flex-wrap: wrap-reverse;
+        }
+
+    }
+    .wide-tours {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            flex-grow: 1;    /*задаем что каждый эллемент занимает половину*/
+            flex-basis: 470px; /*задаем базовае значение ширины меньшей которой эллемент не будет*/
+            h3 {
+                color: $color;
+                text-align: left;
+                font-size: 30px;
+                margin: 50px 0px 50px 45px;   
+            }
+            p {
+                color: $color;
+                text-align: left;
+                font-size: 15px;
+                margin: 0px 0px 20px 45px;
+            }
+        }
+        .wide-tours-text {
+            background-color: $color2;
+        }
+        .wide-tours-foto {
+            background-image: url(images/3_01.jpg);
+            max-height: 580px;
+            background-position: top;
+            background-size: cover;
+        }
+        .wide-tours-foto-2 {
+            background-image: url(images/2_02.jpg);
+            max-height: 580px;
+            background-position: top;
+            background-size: cover;
+        }
+        .wide-tours-foto-3 {
+            background-image: url(images/3_03.jpg);
+            max-height: 580px;
+            background-position: top;
+            background-size: cover;
+        }
+        .wide-tours-foto-4 {
+            background-image: url(images/2_04.jpg);
+            max-height: 580px;
+            background-position: top;
+            background-size: cover;
+        }
+    }
+
+} 
+
+// страница контактов ============================================================================================================
+.wrapper-contacts {
+    background-image: url(img/monopod.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    .wrapper-contacts-wrapper {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+.contacts-text {
+    text-align: left;
+    p {
+        padding-bottom: 30px; 
+    }
+}
+
+.leadership {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+    .leadership-man {
+        display: flex;
+        margin: 10px;
+        .leadership-man-foto {
+            background-image: url(img/man.jpg);
+            width: 210px;
+            height: 160px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .leadership-woman {
+        display: flex;
+        margin: 10px;
+        .leadership-woman-foto {
+            background-image: url(img/woman.jpg);
+            width: 210px;
+            height: 160px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .leadership-text {
+        padding: 20px;
+        max-width: 300px;
+        height: 120px;
+        text-align: left;
+        background-color: $color2;
+        border-left: $color4 4px solid;
+        a {
+            text-decoration: none;
+        }
+        
+    } 
+}
+.contacts-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .contacts-contacts {
+        text-align: left;
+        margin: 0 10px 0 100px;
+    
+        h4 {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                background-size: cover;
+                left: -60px;
+                top: 3px;
+            }
+            &:nth-child(3n + 1) {
+                &:before {
+                    background-image: url(icons/placeholder.png);
+                }
+            }
+            &:nth-child(3n + 2) {
+                &:before {
+                    background-image: url(icons/telephone.png); 
+                }
+            }
+            &:nth-child(3n + 3) {
+                &:before {
+                    background-image: url(icons/mail.png);
+                }
+            }
+        }
+        p {
+            margin: 0 0 20px 0;
+        }
+    }
+    form {
+        text-align: left;
+        input {
+            width: 510px;
+            height: 50px;
+            border: #eb4747 1px solid;
+            margin: 10px 0 5px 0;
+        }
+    }
+    
+}

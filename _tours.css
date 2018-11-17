@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    background: url(img/tourists.jpg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100%;
+    max-height: 700px;
+    max-width: 1900px;
+}
+
+h2:not(.logo):before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 1px;
+    background: rgb(255, 195, 75);
+    top: 102px;
+    transition: 0.2s all;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+h2 {
+    position: relative;
+    padding: 50px 0 20px 0;
+    font-size: 30px;
+}
+.title h2 {
+    color: rgb(60, 111, 143);
+}
+.title p {
+    font-size: 17px;
+    padding: 0px 0 50px 0;
+}
+
+.wrapper1 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.wide {
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Pattaya', sans-serif;
+}
+.header1 {
+    display: flex;
+    align-items: center;
+}
+
+
+.name {
+    padding-left: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.name a {
+    display: block;
+    text-decoration: none;
+    color: rgb(253, 197, 13);
+    text-shadow: 0 0 1em black;
+    height: 100%;
+}
+
+
+.logo {
+    background: url(icons/spasskaya-tower.png) center center / contain no-repeat;
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.caption {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+}
+
+.caption p {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button a {
+    background-color: rgb(85, 159, 206);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 200px;
+    color: white;
+    transition: 0.3s;
+}
+
+.button a:hover {
+    background-color: rgb(60, 111, 143);
+    transition: 0.3s;
+}
+
+.advantages {
+    flex-wrap: wrap;
+    display: flex;
+}
+.edge:nth-of-type(odd) {
+    padding-bottom: 50px;  
+}
+
+.edge {
+    display: flex;
+    width: 50%;
+    position: relative;   
+}
+
+.edge div {
+    text-align: left;
+}
+
+.desc {
+    margin-left: 100px;
+    padding-right: 20px;  
+}
+
+.img:before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid;
+    background-size: cover;
+    position: absolute; 
+}
+
+.img:nth-of-type(6n + 1) {
+    color: #eb4747;
+}
+
+.img:nth-child(odd):before {
+    background-image: url(icons/map.png);
+}
+
+.whoweare {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 195, 75);
+    color: rgb(255, 255, 255);
+}
+.whoweare div {
+    width: 50%;
+    justify-content: center;
+    text-shadow: 10px black;
+}
+.whoweare .title h2 {
+    color: rgb(255, 255, 255);
+}
+
+.selfie {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Почему встают только 2 картинки???????????????????
+?????????????????????????????????? */
+.selfie:nth-of-type(4n+1) {
+    background-image: url(images/3_01.jpg);
+}
+.selfie:nth-of-type(4n+2) {
+    background-image: url(images/2_02.jpg);
+}
+.selfie:nth-of-type(4n+3) {
+    background-image: url(images/3_03.jpg);
+}
+.selfie:nth-of-type(4n+4) {
+    background-image: url(images/2_04.jpg);
+}
+
+.whoweare .title {
+    text-align: left;
+    padding: 50px 20px 50px 50px;
+    box-sizing: border-box;
+
+}
+
+.button a {
+    background-color: rgb(85, 159, 206);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 200px;
+    color: white;
+}
+
+.wrapper_footer {
+    max-width: 1900px;
+    background-color: rgb(21, 55, 65);
+    padding: 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.footer > div {
+    width: 33.3333%;
+}
+.logo_footer {
+    position: relative;
+    width: 300px;
+}
+.logo_footer:before {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(icons/spasskaya-tower.png);
+    position: absolute;
+    top: 5px;
+}
+
+.footer p {
+    padding: 20px 50px 20px 2px;
+    text-align: left;
+    color: white;
+}
+.logo_footer p {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(253, 197, 13);
+    font-style: italic;
+    padding: 20px;
+    margin-left: 65px;
+}
+
+.contacts {
+    text-align: left;
+    margin-left: 100px;
+}
+.contacts h3 {
+    color: rgb(255, 255, 255);
+    margin: 15px -45px;
+}
+
+.contacts p {
+    position: relative;
+    margin: 10px 0;
+}
+
+.contacts p:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    left: -50px;
+    top: 15px;
+    position: absolute;
+}
+
+.contacts p:nth-child(3n + 1):before {
+    background-image: url(icons/placeholder.png);
+}
+.contacts p:nth-child(3n + 2):before {
+    background-image: url(icons/mail.png);
+}
+.contacts p:nth-child(3n + 3):before {
+    background-image: url(icons/telephone.png);
+}
+
+.news {
+    text-align: left;
+}
+
+.news h3 {
+    color: rgb(255, 255, 255);
+    margin: 15px 0; 
+}
+
+
+
+
+
+
+
+
